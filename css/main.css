@@ -49,6 +49,7 @@ p {
   height: 50vh;
   width: 40vw;
   border: 1px solid var(--main-border-color);
+  overflow-wrap: break-word;
 }
 
 .add-btn {
@@ -90,15 +91,12 @@ p {
 }
 
 .modal {
-  transform: translate(-50%, -50%) scale(1.2);
-}
-
-.modal {
+  overflow-wrap: break-word;
   padding: 24px;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, -50%) scale(1.2);
   background-color: #ffffff;
   min-width: 240px;
   min-height: 240px;

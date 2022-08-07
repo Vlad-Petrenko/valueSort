@@ -15,8 +15,10 @@ refs.addPairText.addEventListener("click", () => {
 });
 
 refs.deleteList.addEventListener("click", () => {
-  deleteFullList(pairListArray);
+  deleteFullList();
+  pairListArray = [];
 });
+
 refs.sortByName.addEventListener("click", () => {
   onSortListForName(pairListArray);
 });

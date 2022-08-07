@@ -8,7 +8,7 @@ export function addTextTooList(list) {
   const inputValue = refs.inputPairText.value;
 
   if (!validateInput(inputValue)) {
-    alert("error");
+    alert('Please write pair like this "Name=Value"');
     return;
   }
 
@@ -24,7 +24,7 @@ export function addTextTooList(list) {
 
 export function createMarkup(list) {
   const markup = list
-    .map(({ name, value }) => `<li>${name}=${value}</li>`)
+    .map(({ name, value }) => `<li><p>${name}=${value}</p></li>`)
     .join("");
 
   refs.pairList.innerHTML = markup;
@@ -40,8 +40,7 @@ export function onSortListForValue(list) {
   createMarkup(list);
 }
 
-export function deleteFullList(list) {
-  list = [];
+export function deleteFullList() {
   refs.pairList.innerHTML = "";
 }
 
