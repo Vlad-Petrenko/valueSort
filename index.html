@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>valueSort</title>
+    <link rel="icon" type="image/x-icon" href="./css/img/icon.png" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">valueSort</h1>
+      <div class="input-box">
+        <label class="pair-box">
+          Name/Value Pair
+          <input type="text" id="pair-text" placeholder="Name=Value" />
+        </label>
+        <button type="button" class="add-btn" data-add>Add</button>
+      </div>
+      <p>Name/Value Pair List</p>
+      <div class="list-box">
+        <ul class="pair-list"></ul>
+        <div class="buttons">
+          <button type="button" data-name=>Sort by Name</button>
+          <button type="button" data-value>Sort by Value</button>
+          <button type="button" data-delete>Delete</button>
+          <button type="button" data-show>Show XML</button>
+        </div>
+      </div>
+    </div>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal"></div>
+      <button class="modal-close" data-modal-close>close</button>
+    </div>
+    <script src="./js/index.js" type="module"></script>
+  </body>
+</html>
